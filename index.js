@@ -6,8 +6,9 @@
 3. Build a function `currentLine` that returns the current line. For example, if `katzDeliLine` is currently `["Ada", "Grace"]`, `currentLine(katzDeliLine)` would return `"The line is currently: 1. Ada, 2. Grace"`.  If there is nobody in line, it should return `"The line is currently empty."`
 */
 temparr= [1,2,3]
+var currentLine = []
 function takeANumber(line) {
- line.push(line[.length] + 1)
+ line.push(line[line.length] + 1)
  return `You are number ${line.length + 1}.`
 }
 
