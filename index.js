@@ -7,7 +7,7 @@
 */
 temparr= [1,2,3]
 function takeANumber(line) {
- line.push(line.length + 1)
+ line.push(line[.length] + 1)
  return `You are number ${line.length + 1}.`
 }
 
