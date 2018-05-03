@@ -5,16 +5,16 @@
 
 3. Build a function `currentLine` that returns the current line. For example, if `katzDeliLine` is currently `["Ada", "Grace"]`, `currentLine(katzDeliLine)` would return `"The line is currently: 1. Ada, 2. Grace"`.  If there is nobody in line, it should return `"The line is currently empty."`
 */
-
+temparr= [1,2,3]
 function takeANumber(line) {
- line.push(name)
- return `You are number ${line.length+1} in line.`
+ line.push(line.length + 1)
+ return `You are number ${line.length + 1}.`
 }
 function nowServing(line) {
   if (line.length === 0) {
     return "There is nobody waiting to be served!"
   }else {
-    return `Currently serving ${line.shift()}.`
+    return `Currently serving ${line.shift()+ 1}.`
   }
 }
 function currentLine(line) {
