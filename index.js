@@ -9,15 +9,15 @@ temparr= [1,2,3]
 var currentLine = []
 function takeANumber(line) {
  line.push(line.length + 1)
+ currentLine.push(line.length + 1)
  return `You are number ${line.length + 1}.`
 }
 
 function nowServing(line) {
-  currentLine = line
   if (currentLine.length === 0) {
     return "There is nobody waiting to be served!"
   }else {
-    return `Currently serving ${line.shift()+ 1}.`
+    return `Currently serving ${currentLine.shift()}.`
   }
 }
 function currentLine(line) {
