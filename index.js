@@ -6,9 +6,9 @@
 3. Build a function `currentLine` that returns the current line. For example, if `katzDeliLine` is currently `["Ada", "Grace"]`, `currentLine(katzDeliLine)` would return `"The line is currently: 1. Ada, 2. Grace"`.  If there is nobody in line, it should return `"The line is currently empty."`
 */
 
-function takeANumber(line, name) {
+function takeANumber(line) {
  line.push(name)
- return `Welcome, ${name}. You are number ${line.length} in line.`
+ return `You are number ${line.length} in line.`
 }
 function nowServing(line) {
   if (line.length === 0) {
